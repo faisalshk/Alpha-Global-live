@@ -14,8 +14,8 @@ const Form = () => {
         setLoading(true); // Display loader
 
         emailjs
-            .sendForm('service_hphzvuh', 'template_mdn00m1', form.current, {
-                publicKey: 'lDuRon2EPZYf762Ao',
+            .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
+                publicKey: import.meta.env.VITE_PUBLIC_KEY,
             })
             .then(
                 () => {
