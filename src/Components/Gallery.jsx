@@ -10,7 +10,7 @@ import '../CSS/gallery.css'
 
 
 const CarouselGallery = ({ wrapperSelector, carouselSelector, cardSelector, autoPlayDelay }) => {
-    const Images = [munich, redFort, agra, agra_1, titlis]
+    const Images = [munich, redFort, agra, titlis]
     const carouselRef = useRef(null);
 
     useEffect(() => {

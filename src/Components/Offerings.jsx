@@ -34,6 +34,14 @@ const Offerings = () => {
         }
     ];
 
+    const scrollToSection = (sectionId) => {
+        const section = document.querySelector(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+            setMobileMenuActive(false); // Close mobile menu after clicking on a link
+        }
+    };
+
     return (
         <section className="section flex-center" id="section--2">
             <div className="section__title_1">
@@ -48,7 +56,7 @@ const Offerings = () => {
                             <h1 className="card-title island-moments-regular">{offering.title}</h1>
                             <p className="card-sub-title my-custom-font">{offering.subtitle}</p>
                             <p className="card-info my-custom-font">{offering.info}</p>
-                            <button className="card-btn my-custom-font" type="button" href="#section--5">
+                            <button className="card-btn my-custom-font" type="button" onClick={() => scrollToSection('#section--5')}>
                                 Book Tour
                             </button>
                         </div>
