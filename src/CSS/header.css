@@ -1,0 +1,660 @@
+.hidden {
+  display: none;
+}
+
+.island-moments-regular {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Apply the class with specific values */
+.my-custom-font {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; /* Example weight value */
+  font-style: normal;
+}
+
+.main-header {
+  /* border: 1px solid; */
+  height: 120px;
+  margin: 0;
+}
+
+.blue-header {
+  width: auto;
+  background-color: #0169c8;
+  height: 44px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  height: 44px;
+  margin-left: 155px;
+  padding: 5px;
+}
+
+.phone {
+  color: #a9a8b6;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone:hover {
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* instagram */
+.instagram {
+  transition: 200ms;
+}
+
+.instagram:hover {
+  transform: scale(2);
+  cursor: pointer;
+}
+/* facebook */
+.facebook {
+  transition: 200ms;
+}
+
+.facebook:hover {
+  transform: scale(2);
+  cursor: pointer;
+}
+
+/* twitter */
+.twitter {
+  transition: 200ms;
+}
+
+.twitter:hover {
+  transform: scale(2);
+  cursor: pointer;
+}
+/* printrest */
+.printrest {
+  transition: 200ms;
+}
+
+.printrest:hover {
+  transform: scale(2);
+  cursor: pointer;
+}
+
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.funBtn {
+  padding: 10px 15px;
+  background: #f60515;
+  color: white;
+  width: 246px;
+  height: 44px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 75px;
+  width: auto;
+  margin-left: 150px;
+  gap: 200px;
+  z-index: 100;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  width: 741px;
+  height: 34px;
+  padding: 10px 10px;
+  justify-content: center;
+}
+
+.nav__item {
+  padding: 15px;
+  font-size: 16px;
+  a {
+    text-decoration: none;
+    color: #67666e;
+    transition: font-size 0.3s, color 0.3s; /* Add transition properties */
+  }
+
+  a:hover {
+    font-size: 20px;
+    font-style: bold;
+    color: #0169c8;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+/* Hide the mobile menu by default */
+.mobile-menu {
+  z-index: 10;
+  position: absolute;
+  top: 3%;
+  background-color: white;
+  width: 40vh;
+  height: 50vh;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774); /* Box shadow for a raised effect */
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the mobile menu */
+.mobile-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav .nav__item {
+  margin-bottom: 10px;
+}
+
+.mobile-nav .nav__link {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-nav .nav__link:hover {
+  font-size: xx-large;
+  color: #0169c8;
+}
+
+/* Show the mobile menu when it's active */
+.active {
+  display: block;
+}
+
+@media screen and (max-width: 1280px) {
+  .main-header {
+    height: 90px; /* Adjust header height */
+  }
+
+  .blue-header {
+    height: 35px; /* Adjust blue header height */
+  }
+
+  .detail {
+    width: 400px; /* Adjust width */
+    height: auto;
+    margin-left: 100px; /* Adjust left margin */
+  }
+
+  .icon-btn {
+    height: 35px; /* Setting the height same as .blue-header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .funBtn {
+    width: 250px; /* Adjust button width */
+    height: 100%;
+    padding: 8px 12px; /* Adjust button padding */
+    font-size: 10px; /* Adjust button font size */
+  }
+
+  .nav {
+    margin-left: 100px; /* Adjust left margin */
+    gap: 150px; /* Adjust gap between items */
+    height: 55px;
+  }
+
+  .logo img {
+    width: 100px; /* Adjust logo width */
+    height: 55px; /* Maintain aspect ratio */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-header {
+    height: 120px; /* Adjust height for smaller screens */
+    .blue-header {
+      width: auto;
+      background-color: #0169c8;
+      height: 44px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .detail {
+      margin-left: 0; /* Remove left margin for smaller screens */
+      width: 50%; /* Set width to full for smaller screens */
+      justify-content: space-around; /* Adjust spacing for smaller screens */
+      gap: 10px; /* Adjust gap between items for smaller screens */
+    }
+
+    .phone:hover {
+      border-bottom: 1px solid gray;
+    }
+
+    .icon-btn {
+      gap: 10px; /* Adjust gap between items for smaller screens */
+    }
+
+    .funBtn {
+      width: auto; /* Set width to auto for smaller screens */
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+      font-size: 12px; /* Adjust font size for smaller screens */
+      height: 44px;
+    }
+
+    .nav {
+      margin-left: 0;
+      gap: 50px;
+      justify-content: space-around;
+
+      .nav__links {
+        width: auto; /* Set width to auto for smaller screens */
+        gap: 20px; /* Adjust gap between items for smaller screens */
+        a {
+          font-size: 14px;
+        }
+
+        a:hover {
+          font-size: 16px;
+          font-style: bold;
+          color: #0169c8;
+          cursor: pointer;
+        }
+      }
+
+      .nav__item {
+        font-size: 14px; /* Adjust font size for smaller screens */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 44px;
+    margin-left: 10px;
+    padding: 5px;
+  }
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75px;
+    width: auto;
+    margin-left: 10px;
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mobile-menu {
+    right: 0;
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    background-color: white;
+    width: 50vh;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
+  }
+  .main-header {
+    min-height: 50px; /* Adjust height for smaller screens */
+    width: auto;
+    height: auto;
+
+    .blue-header {
+      height: 30px; /* Adjust height for smaller screens */
+      flex-direction: row; /* Stack items vertically for smaller screens */
+      gap: 10px; /* Adjust gap between items for smaller screens */
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .detail {
+      min-width: 70%;
+      flex-direction: row;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone {
+      font-size: 9px; /* Adjust font size for smaller screens */
+      gap: 5px;
+      img {
+        height: 15px;
+      }
+    }
+
+    .icon-btn {
+      .icons {
+        display: none;
+      }
+      gap: 4px; /* Adjust gap between items for smaller screens */
+      .funBtn {
+        display: none;
+      }
+    }
+
+    .nav {
+      margin-left: 0; /* Remove left margin for smaller screens */
+      gap: 100px; /* Adjust gap between items for smaller screens */
+      align-items: center;
+
+      .logo {
+        margin-top: 10px;
+        width: 100px;
+      }
+    }
+
+    .menu {
+      display: block;
+    }
+
+    .nav__links {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .mobile-menu {
+    right: 0;
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    background-color: white;
+    width: 50vh;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
+  }
+  .main-header {
+    min-height: 50px; /* Adjust height for smaller screens */
+    width: auto;
+    height: auto;
+
+    .blue-header {
+      height: 30px; /* Adjust height for smaller screens */
+      flex-direction: row; /* Stack items vertically for smaller screens */
+      gap: 10px; /* Adjust gap between items for smaller screens */
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .detail {
+      min-width: 70%;
+      flex-direction: row;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone {
+      font-size: 9px; /* Adjust font size for smaller screens */
+      gap: 5px;
+      img {
+        height: 15px;
+      }
+    }
+
+    .icon-btn {
+      .icons {
+        display: none;
+      }
+      gap: 4px; /* Adjust gap between items for smaller screens */
+      .funBtn {
+        display: none;
+      }
+    }
+
+    .nav {
+      margin-left: 0; /* Remove left margin for smaller screens */
+      gap: 100px; /* Adjust gap between items for smaller screens */
+      align-items: center;
+
+      .logo {
+        margin-top: 10px;
+        width: 100px;
+      }
+    }
+
+    .menu {
+      display: block;
+    }
+
+    .nav__links {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .mobile-menu {
+    right: 0;
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    background-color: white;
+    width: 50vh;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
+  }
+  .main-header {
+    min-height: 50px; /* Adjust height for smaller screens */
+    width: auto;
+    height: auto;
+
+    .blue-header {
+      height: 30px; /* Adjust height for smaller screens */
+      flex-direction: row; /* Stack items vertically for smaller screens */
+      gap: 10px; /* Adjust gap between items for smaller screens */
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .detail {
+      min-width: 70%;
+      flex-direction: row;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone {
+      font-size: 9px; /* Adjust font size for smaller screens */
+      gap: 5px;
+      img {
+        height: 15px;
+      }
+    }
+
+    .icon-btn {
+      .icons {
+        display: none;
+      }
+      gap: 4px; /* Adjust gap between items for smaller screens */
+      .funBtn {
+        display: none;
+      }
+    }
+
+    .nav {
+      margin-left: 0; /* Remove left margin for smaller screens */
+      gap: 100px; /* Adjust gap between items for smaller screens */
+      align-items: center;
+
+      .logo {
+        margin-top: 10px;
+        width: 100px;
+      }
+    }
+
+    .menu {
+      display: block;
+    }
+
+    .nav__links {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .mobile-menu {
+    right: 0;
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    background-color: white;
+    width: 50vh;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    right: 0;
+    z-index: 10;
+    position: absolute;
+    top: 5%;
+    background-color: white;
+    width: 45vh;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .mobile-menu {
+    right: 0;
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    background-color: white;
+    width: 50vh;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
+  }
+  .main-header {
+    min-height: 50px; /* Adjust height for smaller screens */
+    width: auto;
+    height: auto;
+
+    .blue-header {
+      height: 30px; /* Adjust height for smaller screens */
+      flex-direction: row; /* Stack items vertically for smaller screens */
+      gap: 10px; /* Adjust gap between items for smaller screens */
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .detail {
+      min-width: 70%;
+      flex-direction: row;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone {
+      font-size: 9px; /* Adjust font size for smaller screens */
+      gap: 5px;
+      img {
+        height: 15px;
+      }
+    }
+
+    .icon-btn {
+      .icons {
+        display: none;
+      }
+      gap: 4px; /* Adjust gap between items for smaller screens */
+      .funBtn {
+        display: none;
+      }
+    }
+
+    .nav {
+      margin-left: 0; /* Remove left margin for smaller screens */
+      gap: 100px; /* Adjust gap between items for smaller screens */
+      align-items: center;
+
+      .logo {
+        margin-top: 10px;
+        width: 100px;
+      }
+    }
+
+    .menu {
+      display: block;
+    }
+
+    .nav__links {
+      display: none;
+    }
+  }
+}

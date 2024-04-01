@@ -1,0 +1,112 @@
+/* plan your trip section */
+.section {
+  padding: 4rem 2rem;
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section__title {
+  max-width: 60rem;
+  /* margin: auto; */
+}
+
+.section__description {
+  margin-bottom: 1rem;
+}
+
+.section__header {
+  font-size: 4rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #0169c8;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section__img {
+    display: none; /* Hide section__img on mobile devices */
+  }
+
+  .section__title {
+    width: 100%; /* Make section__title take up the entire width */
+  }
+}
+
+.margin-top {
+  margin-top: 10rem;
+
+  button {
+    color: white;
+    padding: 10px 10px;
+    background-color: #f60515;
+    border-radius: 8px;
+    width: 200px;
+    height: 52px;
+    border-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .margin-top {
+    margin-top: 5rem;
+  }
+}
+
+.check__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  list-style: none;
+  padding: 5px;
+}
+
+.check_list_desc {
+  color: #0169c8;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 912px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .section__img {
+    width: 400px;
+    height: 400px;
+  }
+  .section__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .check_list_desc {
+    color: #0169c8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+  }
+}

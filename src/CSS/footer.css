@@ -1,0 +1,429 @@
+.footer {
+  width: auto;
+  height: 600px;
+  background-color: #e5f7f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer-content {
+  width: auto;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  .footer-details {
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+
+    p {
+      font-size: 15px;
+      color: black;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: flex-start;
+
+      .detail1 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+          font-size: 15px;
+          font-weight: bold;
+          color: #787780;
+        }
+      }
+    }
+  }
+
+  .footer-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+
+    h3 {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .footer_links {
+      margin-top: 10px;
+      list-style: none;
+      .link_item {
+        padding: 10px 10px;
+      }
+      a {
+        font-size: 15px;
+        color: #787780;
+        font-weight: 600;
+        line-height: 34px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    input {
+      width: 370px;
+      height: 65px;
+      background-color: #292837;
+      border-radius: 8px;
+      text-align: center;
+      border: none;
+    }
+
+    input:focus {
+      color: white;
+    }
+
+    button {
+      width: 370px;
+      height: 65px;
+      background-color: #f60515;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      border: none;
+      letter-spacing: 2px;
+      font-size: 15px;
+    }
+
+    p {
+      color: #787780;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}
+
+.footer-bottom {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  background-color: whitesmoke;
+
+  .copy-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    p {
+      margin-left: 100px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #787780;
+    }
+
+    .icon {
+      margin-right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .footer-icon {
+      width: 30px;
+      height: 30px;
+      background-color: #0169c8;
+      transition: 0.3s;
+      border-radius: 15%;
+    }
+    .footer-icon:hover {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .red-arrow {
+    width: 10%;
+    height: 100%;
+    background-color: #f60515;
+    border-radius: 0 8px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1204px) {
+  .footer {
+    gap: 10px;
+    justify-content: start;
+    align-items: normal;
+    height: auto;
+    .footer-content {
+      gap: 12px;
+      height: auto;
+
+      .subscribe {
+        input {
+          width: 300px;
+          height: 50px;
+        }
+        button {
+          width: 300px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .footer {
+    width: auto;
+    height: auto;
+    background-color: #e5f7f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .footer-content .subscribe input {
+    width: 300px;
+    height: 45px;
+    background-color: #292837;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+  }
+
+  .footer-content .subscribe button {
+    width: 300px;
+    height: 45px;
+  }
+
+  .footer-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .footer-content .footer-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    gap: 5px;
+  }
+
+  .footer-content .footer-link .footer_links .link_item {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer-content {
+    gap: 20px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .footer-content .footer-details {
+    width: 250px;
+  }
+
+  .footer-content .footer-details p {
+    font-size: 12px;
+  }
+
+  .footer-content .footer-details .contact-details .detail1 span {
+    font-size: 12px;
+  }
+
+  .footer-content .footer-link h3 {
+    font-size: 18px;
+  }
+
+  .footer-content .footer-link {
+    gap: 10px;
+    height: auto;
+  }
+
+  .footer-content .footer-link .footer_links .link_item {
+    padding: 3px;
+  }
+  .footer-content .footer-link .footer_links a {
+    font-size: 12px;
+    line-height: 3px;
+  }
+  .footer .footer-content .subscribe input {
+    width: 200px;
+    height: 40px;
+  }
+  .footer .footer-content .subscribe button {
+    width: 200px;
+    height: 40px;
+  }
+
+  .footer-bottom {
+    width: 90%;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer {
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: baseline;
+    height: auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust gap between elements */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px;
+  }
+
+  .footer-details {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 350px; /* Limit maximum width for smaller screens */
+  }
+
+  .footer-content .footer-link {
+    height: auto;
+    gap: 10px;
+  }
+
+  .footer-content .footer-link .footer_links {
+    margin-top: 0;
+  }
+
+  .footer-content .footer-link .footer_links .link_item {
+    padding: 10px;
+  }
+
+  .footer-link,
+  .subscribe {
+    width: 100%; /* Make these sections full width */
+  }
+
+  .footer-bottom {
+    height: 80px; /* Adjust height of footer bottom for smaller screens */
+  }
+
+  .footer-bottom .copy-right {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    justify-content: flex-start;
+    gap: 10px; /* Adjust gap between elements */
+    text-align: center; /* Center align text */
+  }
+
+  .footer-bottom .copy-right p {
+    margin-left: 0;
+  }
+
+  .red-arrow {
+    width: 100%; /* Make red arrow full width */
+    border-radius: 0; /* Remove border radius */
+  }
+
+  .footer-bottom .copy-right .footer-icon {
+    width: 20px; /* Adjust size of social media icons */
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer {
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: baseline;
+    height: auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust gap between elements */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px;
+  }
+
+  .footer-details {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 350px; /* Limit maximum width for smaller screens */
+  }
+
+  .footer-content .footer-link {
+    height: auto;
+    gap: 10px;
+  }
+
+  .footer-content .footer-link .footer_links {
+    margin-top: 0;
+  }
+
+  .footer-content .footer-link .footer_links .link_item {
+    padding: 10px;
+  }
+
+  .footer-link,
+  .subscribe {
+    width: 100%; /* Make these sections full width */
+  }
+
+  .footer-bottom {
+    height: 80px; /* Adjust height of footer bottom for smaller screens */
+  }
+
+  .footer-bottom .copy-right {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    justify-content: flex-start;
+    gap: 10px; /* Adjust gap between elements */
+    text-align: center; /* Center align text */
+  }
+
+  .footer-bottom .copy-right p {
+    margin-left: 0;
+  }
+
+  .red-arrow {
+    width: 100%; /* Make red arrow full width */
+    border-radius: 0; /* Remove border radius */
+  }
+
+  .footer-bottom .copy-right .footer-icon {
+    width: 20px; /* Adjust size of social media icons */
+    height: 20px;
+  }
+}

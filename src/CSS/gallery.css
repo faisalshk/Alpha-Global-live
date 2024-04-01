@@ -1,0 +1,95 @@
+.gallery_section {
+  width: auto;
+  height: 581px;
+  background-color: #0169c8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .map {
+    top: 0%;
+    left: 0;
+    position: absolute;
+  }
+  .map1 {
+    position: absolute;
+    right: 100px;
+    top: -100px;
+  }
+}
+
+.wrapper-gallery {
+  /* max-width: 1400px; */
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper-gallery .carousel-gallery {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel-gallery::-webkit-scrollbar {
+  display: none;
+}
+.carousel-gallery.no-transition {
+  scroll-behavior: auto;
+}
+.carousel-gallery.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel-gallery.dragging .card-gallery {
+  cursor: grab;
+  user-select: none;
+}
+.carousel-gallery :where(.card-gallery, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-gallery .card-gallery {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel-gallery .card-gallery .img {
+  background: #0169c8;
+  height: 100%;
+  width: 100%;
+}
+.card-gallery .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper-gallery .carousel-gallery {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+  .map {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper-gallery .carousel-gallery {
+    grid-auto-columns: 100%;
+  }
+  .map {
+    display: none;
+  }
+}
