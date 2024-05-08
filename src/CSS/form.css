@@ -71,6 +71,8 @@
         border: 1px solid #67666e;
         border-radius: 5px;
         padding: 5px 5px;
+        background-color: white;
+        font-size: large;
       }
 
       input:focus {

@@ -1,4 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import Modal from './Modal';
+
+
 import '../CSS/tour.css'
 import tajmahal from '../assets/agra.jpg'
 import leftArrow from '../assets/left_arrow.svg';
@@ -13,6 +16,20 @@ import agra_1 from '../assets/agra_1.jpg'
 import titlis from '../assets/titls.jpg'
 
 const Tours = () => {
+
+    // modal code
+    const [showModal, setShowModal] = useState(false);
+    const [selectedTour, setSelectedTour] = useState(null);
+
+    const openModal = (tour) => {
+        setSelectedTour(tour);
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+        setSelectedTour(null);
+    };
 
     const tourData = [
         {
@@ -155,14 +172,18 @@ const Tours = () => {
                             </div>
                             <h2 className="my-custom-font font1">{tour.name}</h2>
                             <span className="my-custom-font">{tour.description}</span>
-                            <button className="card-btn my-custom-font" type="button" onClick={scrollToContact}>
-                                Book Tour
+                            <button className="card-btn my-custom-font" type="button" onClick={() => { openModal(tour) }}>
+                                Learn more
                             </button>
                         </li>
                     ))}
                 </ul>
                 <i id="right"><img id='rightArrow' src={rightArrow} alt="right arrow" /></i>
             </div>
+            {/* Modal */}
+            {showModal && selectedTour && (
+                <Modal tour={selectedTour} closeModal={closeModal} />
+            )}
         </section>
     );
 };

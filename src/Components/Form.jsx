@@ -43,7 +43,7 @@ const Form = () => {
                 </div>
                 <form className="form" id="emailForm" ref={form} onSubmit={sendEmail}>
                     <label className="my-custom-font">Get in touch with us</label>
-                    <input type="text" id="nameInput" name="name" placeholder="Name" required />
+                    <input type="text" id="nameInput" name="name" placeholder="Name" _placeholder={{ opacity: 0.4, color: 'grey' }} required />
                     <input
                         type="number"
                         id="phoneInput"

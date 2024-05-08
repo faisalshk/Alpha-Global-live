@@ -6,7 +6,7 @@ import leftArrow from '../assets/left_arrow.svg';
 import rightArrow from '../assets/right_arrow.svg';
 import '../CSS/hero.css';
 
-const Hero = () => {
+const Hero = ({ tourImage }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
         { image: offerings_1, title: 'Travel & Adventure', subtitle: 'Where do you want to go ?' },
